@@ -15,6 +15,7 @@ const (
 	ADAETH   = "ADAETH"
 	ADAEUR   = "ADAEUR"
 	ADAUSD   = "ADAUSD"
+	ETHUSDT  = "ETHUSDT"
 	ADAXBT   = "ADAXBT"
 	AAVEUSD  = "AAVEUSD"
 	BCHEUR   = "BCHEUR"
@@ -115,6 +116,7 @@ type AssetPairsResponse struct {
 	ADAETH   AssetPairInfo
 	ADAEUR   AssetPairInfo
 	ADAUSD   AssetPairInfo
+	ETHUSDT  AssetPairInfo
 	ADAXBT   AssetPairInfo
 	BCHEUR   AssetPairInfo
 	BCHUSD   AssetPairInfo
@@ -324,6 +326,7 @@ type Fees struct {
 	ADAETH   FeeInfo
 	ADAEUR   FeeInfo
 	ADAUSD   FeeInfo
+	ETHUSDT  FeeInfo
 	ADAXBT   FeeInfo
 	AAVEUSD  FeeInfo
 	BCHEUR   FeeInfo
@@ -418,6 +421,7 @@ type TickerResponse struct {
 	ADAETH   PairTickerInfo
 	ADAEUR   PairTickerInfo
 	ADAUSD   PairTickerInfo
+	ETHUSDT  PairTickerInfo
 	ADAXBT   PairTickerInfo
 	AAVEUSD  PairTickerInfo
 	BCHEUR   PairTickerInfo
