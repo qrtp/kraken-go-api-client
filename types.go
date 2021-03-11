@@ -286,6 +286,7 @@ type BalanceResponse struct {
 	QTUM float64 `json:"QTUM,string"`
 	KFEE float64 `json:"KFEE,string"`
 	USDT float64 `json:"USDT,string"`
+	USDC float64 `json:"USDC,string"`
 	XDAO float64 `json:"XDAO,string"`
 	XETC float64 `json:"XETC,string"`
 	XETH float64 `json:"XETH,string"`
