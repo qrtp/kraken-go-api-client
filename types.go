@@ -523,11 +523,15 @@ type WithdrawInfoResponse struct {
 }
 
 // GetPairTickerInfo is a helper method that returns given `pair`'s `PairTickerInfo`
-func (v *TickerResponse) GetPairTickerInfo(pair string) PairTickerInfo {
+func (v *TickerResponse) GetPairTickerInfo(pair string) (pti PairTickerInfo) {
 	r := reflect.ValueOf(v)
 	f := reflect.Indirect(r).FieldByName(pair)
 
-	return f.Interface().(PairTickerInfo)
+	if !f.IsValid() {
+		return pti
+	}
+	pti = f.Interface().(PairTickerInfo)
+	return
 }
 
 // PairTickerInfo represents ticker information for a pair
